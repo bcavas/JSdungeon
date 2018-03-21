@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dicey Dungeon</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div id="dungeon">
+	<div id="hero">
+		<img src="assets/hero1.gif" alt="our hero">
+	</div>
+
+	<div id="monster">
+		<img src="assets/monster.gif" alt="the monster">
+	</div>
+</div>
+
+<div id="menu">
+	<button class="box" id="attack" onclick="attack()">Attack</button>
+	<button class="box" id="items" onclick="items()">Items</button>
+	<button class="box" id="heal" onclick="heal()">Heal</button>	
+	<a href="index.html"><button class="box" id="flee" onclick="flee()">Flee</button></a>
+	<p id="heroName">Hero HP: <span id="heroHP"></span>/100</p>
+	<p id="heroMagic">Hero MP: <span id="heroMP"></span>/10</p>
+	<p id="monsterName">Monster HP: <span id="creepHP"></span>/200</p>
+
+	<div>
+		<div id="consoleHero">You entered Jabba Skripp's fortress on your quest to vanquish the evil tyrant.</div>
+		<div id="consoleMonster">A goblin scout spotted you and attacked on sight!</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<script src="js/external.js"></script>
+</body>
+</html>
